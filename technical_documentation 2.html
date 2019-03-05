@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Technical Documentation</title>
+  <!-- <link rel="stylesheet" type="text/css" href="technical_documentation.css"> -->
+  <style>
+  /* mobile */
+   body {
+     display: grid;
+     grid-template-rows: 3% 3% 94%;
+   }
+   /* #page-header {
+     padding:0px;
+     margin:25px;
+   } */
+   #page-header-div {
+     grid-row:1/2;
+     text-align:center;
+     border:solid;
+     border-width: 3px;
+   }
+   #navbar-div {
+     grid-row:2/3;
+     position:sticky;
+     top:0;
+     background-color:white;
+     z-index:1;
+   }
+   #navbar {
+     position:flex;
+     display:inline;
+     color:black;
+     /* max-width:15vw; */
+
+   }
+   #navbar header {
+     font-size:25px;
+     font-weight:bold;
+   }
+   a {
+     color:black;
+     text-decoration:none;
+     box-shadow:1px 1px 2px #aaaaaa;
+     padding: 0px 2px 0px 1px;
+     background-color:#f5f5f5;
+   }
+   nav div {
+     display:inline-block;
+     /* border:solid; */
+     border-width:1px;
+     border-color: #999999;
+   }
+
+   #navbar-header {
+     /* display: inline-block; */
+
+   }
+   #main-doc {
+     grid-row:3/4;
+     padding-left:1%;
+     padding-right:1%;
+     /* background-color:blue; */
+     position:relative;
+
+   }
+
+   #main-doc header {
+     text-align: center;
+     padding-top:25vh;
+     font-size:25px;
+     font-weight:bold;
+   }
+
+   h2 {
+      font-size:20px;
+      text-align:center;
+   }
+
+   code {
+     background-color:#dddddd;
+     display:block;
+     margin-top:7px;
+     margin-bottom:7px;
+
+   }
+
+  /* not mobile */
+  @media only screen and (min-width: 500px) {
+      body {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        /* grid-template-columns: 25% 75%; */
+        grid-template-rows: 1fr 20fr;
+        /* background-color:red; */
+      }
+
+      #page-header-div {
+        grid-column:1/3;
+        grid-row:1/2;
+        text-align:center;
+        border:solid;
+        border-width: 3px;
+      }
+      #navbar-div {
+
+        grid-column:1/2;
+        grid-row:2/3;
+        border-right:solid;
+        border-left:solid;
+        border-width:3px;
+        border-color:black;
+        /* padding-left:2px; */
+
+      }
+      #navbar {
+        position:sticky;
+        top:1%;
+        color:black;
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        /* padding-left:5px; */
+      }
+
+
+      #navbar header {
+        margin-bottom:5px;
+        padding-left:3px;
+        padding-right:3px;
+        text-align: center;
+      }
+
+      #main-doc {
+        grid-column:2/3;
+        grid-row:2/3;
+        padding-left:1%;
+        padding-right:1%;
+
+      }
+      #main-doc header {
+        padding-top:0px;
+      }
+      .navbar-div {
+        border-top:solid;
+        position:relative;
+        min-height:30px;
+        vertical-align: middle;
+      }
+      a {
+        all:initial;
+        cursor: pointer;
+        display:block;
+        /* background-color:blue; */
+        width:100%;
+        height:100%;
+        text-align:center;
+        /* vertical-align:middle; */
+        /* line-height:normal; */
+      }
+      #last-link {
+        border-bottom:solid;
+        height:100%
+      }
+   }
+
+
+
+  </style>
+
+
+</head>
+
+<body>
+  <div id="page-header-div">
+    <h1 id="page-header">Piano Practice</h1>
+  </div>
+  <div id="navbar-div">
+    <nav id="navbar">
+      <header id="navbar-header">Quicklinks</header>
+        <div class="navbar-div"><a href=#Introduction class="nav-link">Introduction</a></div>
+        <div class="navbar-div"><a href=#Areas_of_Focus class="nav-link">Areas of Focus</a></div>
+        <div class="navbar-div"><a href=#Practice_Techniques class="nav-link">Practice Techniques</a></div>
+        <div class="navbar-div"><a href=#Time_Management class="nav-link">Time Management</a></div>
+        <div id="last-link" class="navbar-div"><a href=#Schools_of_Thought class="nav-link">Schools of Thought</a></div>
+    </nav>
+  </div>
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header id="introduction-header">Introduction</header>
+      <p> Below is a quick overview of
+        how one may practice. I note, though, there are many ways and areas to practice. However, the art/discipline
+        of piano is a field with ambiguous boundaries. I, myself, have wrestled
+        with what expectations someone should have when learning to play piano.
+        One teacher may include music theory as a necessary part of their student's
+        curriculum, while another may insist upon ear-training. I, generally, try
+        to incorporate as many aspects of music in teaching piano.
+      </p>
+      <p>You should not consider this an exhaustive guide, but it will hopefully
+        give you an idea of common "practices" for practice.
+    </section>
+
+    <section id="Areas_of_Focus" class="main-section">
+      <header id="areas-of-focus-header">Areas of Focus</header>
+      <p>Below are my primary areas of music to develop:
+        <ul>
+          <li>Sight Reading</li>
+          <li>Technique</li>
+          <li>Theory</li>
+          <li>Improvisation/Composition</li>
+          <li>Performance</li>
+        </ul>
+      </p>
+      <p>I will focus mainly on the first two areas. Though all areas should be developed, the first two
+        areas benefit the most from the practice methods I describe in this article.
+      </p>
+    </section>
+
+    <section id="Practice_Techniques" class="main-section">
+      <header id="practice-techniques-header">Practice Techniques</header>
+      <p>The practice techniques for sight-reading and technique differ greatly. (Technique encompasses
+        scales, arpeggios, and general dexterity and strength development).
+      </p>
+      <h2>Sight Reading</h2>
+      <p>Sight reading, like all these areas has a number of different skills that are being used at the same time.
+        <ul>
+          <li>Eye-training</li>
+          <li>Note recognition</li>
+          <li>Pattern recognition</li>
+        </ul>
+        These all need to be practiced slowly and deliberately. One of the most challenging aspects of improving
+        sight-reading is simply having a sufficient amount of material at
+        graduated levels. Sightreadingfactory.com is a useful resource, though it is a paid subscription.
+      </p>
+      <h2>Technique</h2>
+      <p>Here are three main ways to practice technique, as well as any musical passage:
+        <ul>
+          <li>Metronome</li>
+          <li>Rhythms</li>
+          <li>Mental</li>
+        </ul>
+        These can be mixed and matched with each other.
+      </p>
+
+    </section>
+
+    <section id="Time_Management" class="main-section">
+      <header id="time-management-header">Time Management</header>
+      <p>When practicing, time-management is very important.
+        Using spreadsheets can be very helpful. Even using formulas can have
+        its benefits. See example:</p>
+        <code>
+          x = minutes practicing technique A
+        </code>
+      <p>If you set this up in a spreadsheet software such as Excel or Google Sheets, you can
+        easily track your practice. You could set up multiple variables/categories.
+      </p>
+        <code>x = minutes practicing technique A<br>
+        y = minutes practicing technique B<br>
+        z = minutes practicing technique C<br>
+        </code>
+      <p>You can decide how much time to allocate to each and also the overall amount of
+        time you want to practice each session.<br>
+        After a few months of lessons I think most students should aim to practice
+        30 minutes a day for 5-6 days. Technique practice may only take 5-10 minutes, so a breakdown of the formula might be as follows:<br>
+      </p>
+        <code>
+          x = minutes of practicing Hanon exercise 1 in A major<br>
+          y = minutes of practicing major scale in A<br>
+          z = minutes of practicing 2-octave arpeggio in A major<br>
+        </code>
+        With actual values:<br>
+        <code>
+          x = 4<br>
+          y = 3<br>
+          z = 3<br>
+          Total = 10 minutes<br>
+        </code>
+      <p>Finally, you can set up a weekly goal for minutes practiced on different
+        areas (like the 5 mentioned in the Areas of Focus section). This way you
+        can track the running total amount of time you have spent on a given area or
+        technique. This helps you adjust your priorities as you progress through a practice
+        timeframe. If you wanted to practice 30 minutes a day for 5 days, that would be 150 minutes
+        weekly. If you wanted to spend 10% of the total time practicing scales, 10%
+        on arpeggios, 10% on reading, and 70% on the remaining areas, you could
+        set something up like this:
+      </p>
+        <code>
+          Given:<br>
+          Total time = 150 minutes<br>
+          Priority %:<br>
+          Scales: 10%, Arpeggios: 10%, Sight-reading: 10%, Everything else: 70%<br>
+          <br>
+
+          Formula:<br>
+          (category priority %)*(Total time)<br>
+          </code>
+          If you wanted to monitor your progress:<br>
+          <code>
+            (actual time spent)/[(category priority %)*(Total time)]
+          </code>
+      </p>
+      <p>The most common thing I do is set up a table with a breakdown of the task in different
+        keys, since being able to (for example) play a major scale in ALL keys is important.
+        You can also set up a table broken into days of the week.
+      </p>
+
+    </section>
+
+    <section id="Schools_of_Thought" class="main-section">
+      <header id="schools-of-thought-header">Schools of Thought</header>
+      <p>I'm aware of two main focuses on facility - i.e., being able to play
+        notes.
+        <ul>
+          <li>Finger strength/independence</li>
+          <li>Periodic relaxation</li>
+      </p>
+      <p>Finger strength and independence are rather self-explanatory. These can be
+        developed by exercise like those of Hanon. Scales and five-finger patterns
+         inadvertantly develop these, as well.
+      </p>
+      <p>Periodic relaxation may be a bit more ambiguous. The idea is that pianists
+        play better the more relaxed they are. Generally, this is true. You can play longer
+        and more consistently if you reduce the energy and strain on your body. You also
+        do a better job avoiding injury. The general idea is letting gravity and the weight
+        of your arm and hand propel your motion into the key. Of course, you still have to
+        use your fingers to direct this force (and add some of their own), but the amount
+        of force needed to play a note is much less if you harness the weight of your arm.
+        This isn't always possible, since you can't "drop" your arm over and over for every
+        note that is played.(Just think of playing even a moderately quick succession of notes, and you'll
+        see you can never drop your arm that frequently).
+        However, if you do this periodically, it offers regular relaxation
+        to your hands and fingers.
+      </p>
+      <p>Ultimately, I think it is best to develop both approaches. You will need both.
+    </section>
+
+  </main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
